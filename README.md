@@ -5,6 +5,8 @@
 > **Uses** [LibreHardwareMonitor/LibreHardwareMonitor](https://github.com/LibreHardwareMonitor/LibreHardwareMonitor) for real-time CPU and GPU temperature monitoring.
 
 ## Overview
+![Picture1](https://i.imgur.com/EuxEdPa.png)
+![Picture2](https://i.imgur.com/eKr77QT.png)
 
 **Watercooler Manager GUI** is a standalone desktop application for Windows, designed for advanced control and monitoring of custom watercooling systems over BLE (Bluetooth Low Energy).  
 It allows you to manage fan, pump, and RGB lighting settings, and provides both manual and automatic (curve-based) control modes.  
