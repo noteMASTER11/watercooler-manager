@@ -40,12 +40,6 @@ Real-time CPU/GPU temperature monitoring is implemented via LibreHardwareMonitor
 
 ---
 
-## Screenshots
-
-*(Add your screenshots here!)*
-
----
-
 ## Supported Hardware
 
 - Watercooling controllers with BLE protocol compatible with [tomups/watercooler-manager](https://github.com/tomups/watercooler-manager) (LCT21001, LCT22002, etc).
