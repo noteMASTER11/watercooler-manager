@@ -297,13 +297,13 @@ class MainWindow(QtWidgets.QMainWindow):
         # Pump Voltage
         mlay.addWidget(QtWidgets.QLabel(UI['label_pump']))
         self.pump_slider = QtWidgets.QSlider(QtCore.Qt.Horizontal)
-        self.pump_slider.setRange(0,3)
+        self.pump_slider.setRange(0,2)
         self.pump_slider.setTickInterval(1)
         self.pump_slider.setTickPosition(QtWidgets.QSlider.TicksBelow)
         mlay.addWidget(self.pump_slider)
         # Pump Voltage Labels
         pump_labels = QtWidgets.QHBoxLayout()
-        volts_labels = ["7V", "8V", "11V", "12V"]
+        volts_labels = ["7V", "8V", "11V"]
         for label in volts_labels:
             lab = QtWidgets.QLabel(label)
             lab.setAlignment(QtCore.Qt.AlignCenter)
@@ -454,7 +454,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.curve_mode_active = False
         duties = [80,150,255]
         await write_fan_mode(self.client, duties[self.fan_slider.value()])
-        volts = [PumpVoltage.V7,PumpVoltage.V8,PumpVoltage.V11,PumpVoltage.V12]
+        volts = [PumpVoltage.V7,PumpVoltage.V8,PumpVoltage.V11]
         await write_pump_mode(self.client, volts[self.pump_slider.value()])
 
     @asyncSlot()
